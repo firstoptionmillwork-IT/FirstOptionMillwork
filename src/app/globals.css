@@ -111,6 +111,14 @@
     height: 0;
     }
   }
+  @keyframes gradient-rotate {
+  from {
+    --gradient-angle: 0deg;
+    }
+  to {
+    --gradient-angle: 360deg;
+    }
+  }
 }
 
 :root {

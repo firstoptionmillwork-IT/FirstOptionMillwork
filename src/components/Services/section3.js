@@ -30,13 +30,13 @@ const images = [
 
 export default function ServicesGallery() {
   return (
-    <section className="w-full bg-[#fafaf8] py-20">
+    <section className="w-full bg-[#fafaf8] py-10">
 
       {/* Section Header */}
       <div className="max-w-5xl mx-auto px-6 mb-14">
         <SectionHeader
           eyebrow="Portfolio"
-          titleBefore="Our"
+          titleBefore="Our "
           titleHighlight="Work"
           titleAfter=""
           subtitle="A curated collection of recent millwork projects"

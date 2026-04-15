@@ -30,12 +30,12 @@ export default function ServicesAccordion() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white py-10">
       {/* Header */}
       <div className="max-w-5xl mx-auto px-6 mb-14">
         <SectionHeader
           eyebrow="FAQ"
-          titleBefore="Common"
+          titleBefore="Common "
           titleHighlight="Questions"
           titleAfter=""
           subtitle="Everything you need to know about our millwork process"

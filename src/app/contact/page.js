@@ -1,6 +1,6 @@
-import Navbar from "@/components/Navbar";
-import Contact from "@/components/Contact";
-import Footer from "@/components/footer";
+import Navbar from "@/components/universal/Navbar";
+import Contact from "@/components/contact/Contact";
+import Footer from "@/components/universal/Footer";
 
 export const metadata = {
   title: "Contact Us — First Option Millwork",

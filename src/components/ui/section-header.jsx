@@ -25,7 +25,7 @@ const SectionHeader = ({
       {/* Eyebrow */}
       {eyebrow && (
         <span
-          className={`block text-[11px] tracking-[6px] uppercase font-medium mb-6 ${
+          className={`block text-[18px] tracking-[6px] uppercase font-medium mb-2 ${
             dark ? "text-amber-300/70" : "text-[#88734C]"
           }`}
         >

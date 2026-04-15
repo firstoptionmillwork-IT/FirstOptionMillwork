@@ -75,12 +75,12 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="mb-4"
         >
-          <div className="mt-6">
+          <div className="mt-10">
             <SectionHeader
               eyebrow="Testimonials"
-              titleBefore="What Our"
+              titleBefore="What Our "
               titleHighlight="Clients"
-              titleAfter="Say"
+              titleAfter=" Say"
               subtitle="See what our customers have to say about us"
             />
           </div>

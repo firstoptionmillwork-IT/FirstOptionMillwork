@@ -3,6 +3,9 @@ import ServicesSection2 from "@/components/Services/Section2";
 import ServicesGallery from "./section3";
 import ServicesAccordion from "./ServicesAccordion";
 import SectionHeader from "@/components/ui/section-header";
+import PictureRelatedTo from "./PictureRelatedTo";
+import StorageInfoSection from "./StorageInfoSection";
+import ConsultationCTA from "./ConsultationCTA";
 
 export default function ServicesHero() {
   return (
@@ -59,7 +62,7 @@ export default function ServicesHero() {
         <div className="relative z-10 px-4 w-full max-w-2xl mx-auto">
           <SectionHeader
             eyebrow="Our Services"
-            titleBefore="Crafted with"
+            titleBefore="Crafted with "
             titleHighlight="Precision"
             titleAfter=""
             subtitle="Custom Millwork & Cabinetry in Toronto"
@@ -69,7 +72,10 @@ export default function ServicesHero() {
       </div>
 
       <ServicesSection2 />
+      <PictureRelatedTo/>
+      <StorageInfoSection />
       <ServicesGallery />
+      <ConsultationCTA />
       <ServicesAccordion />
     </div>
   );

@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from "next/image";
 import GlowCard from "@/components/ui/spotlight-card";
 
-export const Component = () => {
+export default function Footer () {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -22,7 +22,7 @@ export const Component = () => {
           />
 
           <p className="text-white/50 text-[13px] leading-relaxed">
-            Alliance Network is a custom cabinet specialist based in Vaughan, ON. 
+            First Option Millwork is a custom cabinet specialist based in North York, ON. 
             We offer design, manufacturing, and installation of high-quality cabinetry.
           </p>
         </div>
@@ -69,11 +69,18 @@ export const Component = () => {
           <div className="w-full h-[1px] bg-white/10"></div>
 
           <div className="flex flex-col gap-2 text-[13px]">
-            {["Home","Gallery","Financing","Blog","Contact"].map((item) => (
-              <div key={item} className="flex items-center gap-2">
+            {[
+              { label: "Home",       href: "/" },
+              { label: "Services",   href: "/services" },
+              { label: "About Us",   href: "/about" },
+              { label: "Gallery",    href: "/gallery" },
+              { label: "Our Process",href: "/our-process" },
+              { label: "Contact",    href: "/contact" },
+            ].map(({ label, href }) => (
+              <div key={label} className="flex items-center gap-2">
                 <span className="text-white/30">›</span>
-                <Link href="#" className="text-white/50 hover:text-white transition">
-                  {item}
+                <Link href={href} className="text-white/50 hover:text-white transition">
+                  {label}
                 </Link>
               </div>
             ))}
@@ -141,7 +148,9 @@ export const Component = () => {
             {["East York","North York","Richmond Hill","Vaughan","King City","Markham"].map((area) => (
               <div key={area} className="flex items-center gap-2">
                 <span className="text-white/30">›</span>
-                <span className="text-white/50">{area}</span>
+                <Link href="/contact" className="text-white/50 hover:text-white transition">
+                  {area}
+                </Link>
               </div>
             ))}
           </div>
@@ -157,10 +166,10 @@ export const Component = () => {
           <div className="flex flex-wrap items-center gap-4">
             <p>© {currentYear} All Rights Reserved</p>
 
-            <Link href="#" className="hover:text-white transition">
+            <Link href="/privacy" className="hover:text-white transition">
               Privacy
             </Link>
-            <Link href="#" className="hover:text-white transition">
+            <Link href="/terms" className="hover:text-white transition">
               Terms
             </Link>
           </div>

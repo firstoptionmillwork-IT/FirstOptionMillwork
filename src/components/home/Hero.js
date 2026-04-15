@@ -33,7 +33,7 @@ export default function Hero() {
     <>
       <style>{pageStyles}</style>
       <section
-        className="relative h-screen w-full flex items-center justify-center text-white overflow-hidden"
+        className="relative h-[95vh] w-full flex items-center justify-center text-white overflow-hidden"
         style={{ background: "url('/hero.jpg') center center / cover no-repeat" }}
       >
         {/* Dark Overlay */}
@@ -46,7 +46,7 @@ export default function Hero() {
         />
 
         {/* Left Slider */}
-        <div className="absolute left-10 top-1/2 -translate-y-1/2 flex flex-col gap-5 z-[4]">
+        {/* <div className="absolute left-10 top-1/2 -translate-y-1/2 flex flex-col gap-5 z-[4]">
           {["01", "02", "03"].map((num, i) => (
             <span
               key={num}
@@ -60,7 +60,7 @@ export default function Hero() {
               {num}
             </span>
           ))}
-        </div>
+        </div> */}
 
         {/* Content */}
         <div className="relative z-[3] max-w-[700px] text-center px-4">

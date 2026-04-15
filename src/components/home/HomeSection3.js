@@ -2,8 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { SparklesText } from "@/components/ui/sparkles-text"
-import { Text_03 } from "./ui/wave-text";
-import { GooeyText } from "@/components/ui/gooey-text-morphing";
+import { Text_03 } from "../ui/wave-text";
 import SectionHeader from "@/components/ui/section-header";
 
 
@@ -175,11 +174,11 @@ function SectionRow({ row }) {
   );
 }
 
-export default function Section3() {
+export default function HomeSection3() {
   return (
     <>
       <style>{auroraStyles}</style>
-      <section className="relative bg-[#fafafa] max-w-full px-[100px] max-[900px]:px-0 py-[100px] max-[900px]:py-10 overflow-hidden">
+      <section className="relative bg-[#fafafa] max-w-full px-[100px] max-[900px]:px-0 py-10 max-[900px]:py-10 overflow-hidden">
 
         {/* Aurora background */}
         <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
@@ -190,9 +189,9 @@ export default function Section3() {
         <div className="relative z-10 mb-20">
           <SectionHeader
             eyebrow="Our Craft"
-            titleBefore="What We"
+            titleBefore="What We "
             titleHighlight="Do"
-            titleAfter="is Best"
+            titleAfter=" is Best"
             subtitle="Premium Custom Millwork across Toronto & GTA"
           />
         </div>

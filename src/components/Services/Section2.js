@@ -60,10 +60,10 @@ export default function ServicesSection2() {
     <div className="w-full bg-white">
 
       {/* Section Header */}
-      <div className="max-w-6xl mx-auto px-6 pt-20 pb-14">
+      <div className="max-w-6xl mx-auto px-6 py-10">
         <SectionHeader
           eyebrow="Featured Service"
-          titleBefore="Shaker Style"
+          titleBefore="Shaker Style "
           titleHighlight="Cabinets"
           titleAfter=""
           subtitle="Timeless craftsmanship for modern living"

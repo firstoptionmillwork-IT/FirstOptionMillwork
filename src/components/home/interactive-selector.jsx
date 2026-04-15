@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { FaHammer, FaCouch, FaUtensils, FaBoxOpen, FaLayerGroup } from 'react-icons/fa';
 import SectionHeader from '@/components/ui/section-header';
 
-const InteractiveSelector = () => {
+const HomeSection4 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animatedOptions, setAnimatedOptions] = useState([]);
 
@@ -77,9 +77,9 @@ const InteractiveSelector = () => {
       <div className="relative z-10 w-full max-w-3xl mb-12">
         <SectionHeader
           eyebrow="Our Services"
-          titleBefore="Bespoke"
+          titleBefore="Bespoke "
           titleHighlight="Millwork"
-          titleAfter="& Cabinetry"
+          titleAfter=" & Cabinetry"
           subtitle="Crafted with precision and built to endure"
           dark={true}
         />
@@ -162,4 +162,4 @@ const InteractiveSelector = () => {
   );
 };
 
-export default InteractiveSelector;
+export default HomeSection4;

@@ -6,6 +6,7 @@ import {
   ArrowRight, Zap, TrendingUp,
 } from "lucide-react"
 import { motion, useScroll, useTransform, useInView, useSpring } from "framer-motion"
+import SectionHeader from "../ui/section-header";
 
 export default function AboutUsSection() {
   const [isVisible, setIsVisible] = useState(false)
@@ -87,7 +88,7 @@ export default function AboutUsSection() {
     <section
       id="about-section"
       ref={sectionRef}
-      className="w-full py-14 px-4 bg-gradient-to-b from-[#F2F2EB] to-[#F8F8F2] text-[#202e44] overflow-hidden relative"
+      className="w-full py-8 px-4 bg-gradient-to-b from-[#F2F2EB] to-[#F8F8F2] text-[#202e44] overflow-hidden relative"
     >
       <motion.div className="absolute top-20 left-10 w-64 h-64 rounded-full bg-[#88734C]/5 blur-3xl" style={{ y: y1, rotate: rotate1 }} />
       <motion.div className="absolute bottom-20 right-10 w-80 h-80 rounded-full bg-[#A9BBC8]/5 blur-3xl" style={{ y: y2, rotate: rotate2 }} />
@@ -115,17 +116,16 @@ export default function AboutUsSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <Zap className="w-4 h-4" />
-            DISCOVER OUR STORY
           </motion.span>
-          <h2 className="text-4xl md:text-5xl font-light mb-4 text-center">About Us</h2>
-          <motion.div
-            className="w-24 h-1 bg-[#88734C]"
-            initial={{ width: 0 }}
-            animate={{ width: 96 }}
-            transition={{ duration: 1, delay: 0.5 }}
+           <SectionHeader
+            eyebrow="Discover Our Story"
+            titleBefore="About "
+            titleHighlight="Us"
+            titleAfter=""
+            subtitle="Best in the business for a reason"
           />
         </motion.div>
+        
 
         <motion.p className="text-center max-w-2xl mx-auto mb-10 text-[#202e44]/80" variants={itemVariants}>
           We are a passionate team of designers and architects dedicated to creating beautiful, functional spaces that
